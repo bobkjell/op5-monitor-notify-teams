@@ -24,11 +24,11 @@ parser.add_argument("-w", "--webhook", help="URL to Teams Webhook", type=str, re
 parser.add_argument("-d", "--debug", help="Enable debug to stdout.", action='store_true', required=False)
 parser.add_argument("-n", "--notificationtype", help="Notification type", type=str, required=True)
 parser.add_argument("-l", "--longdatetime", help="Date/time", type=str, required=True)
-parser.add_argument("-ho", "--hostoutput", help="Host alarm message", type=str, required=False)
+parser.add_argument("-ho", "--hostoutput", help="Host output", type=str, required=False)
 parser.add_argument("-hs", "--hoststate", help="Host state", type=str, required=False)
 parser.add_argument("-ha", "--hostalias", help="Host alias", type=str, required=False)
 parser.add_argument("-hi", "--hostipaddress", help="Host IP address", type=str, required=False)
-parser.add_argument("-so", "--serviceoutput", help="Service alarm message", type=str, required=False)
+parser.add_argument("-so", "--serviceoutput", help="Service output", type=str, required=False)
 parser.add_argument("-ss", "--servicestate", help="Service state", type=str, required=False)
 args = parser.parse_args()
 
