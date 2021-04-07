@@ -19,7 +19,7 @@ Upload script to: `/opt/plugins/custom/` <br/>
 Create two new check_commands for host- & service notifications (insert webhook url in command below) <br/>
 
 `command_name = host-notify-teams` <br />
-`command_line = $USER1$/custom/notify_teams.py -w '<webhook-url>' -H '$HOSTNAME$' -ho '$HOSTOUTPUT$' -ha '$HOSTALIAS$'-hs '$HOSTSTATE$' -hi '$HOSTADDRESS$' -n '$NOTIFICATIONTYPE$' -l '$LONGDATETIME$'`
+`command_line = $USER1$/custom/notify_teams.py -w '<webhook-url>' -H '$HOSTNAME$' -ho '$HOSTOUTPUT$' -ha '$HOSTALIAS$' -hs '$HOSTSTATE$' -hi '$HOSTADDRESS$' -n '$NOTIFICATIONTYPE$' -l '$LONGDATETIME$'`
   
 `command_name = service-notify-teams` <br />
 `command_line = $USER1$/custom/notify_teams.py -w '<webhook-url>' -H '$HOSTNAME$' -ha '$HOSTALIAS$' -hi '$HOSTADDRESS$' -S '$SERVICEDESC$' -so '$SERVICEOUTPUT$' -ss '$SERVICESTATE$' -n '$NOTIFICATIONTYPE$' -l '$LONGDATETIME$'`
